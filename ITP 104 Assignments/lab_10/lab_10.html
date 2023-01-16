@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta>
+    <title></title>
+    <style>
+      img{
+        width:300px;
+        height:auto;
+        position:absolute;
+      }
+      .parent{
+        position:relative;
+        top:50px;
+        left:150px;
+      }
+      #two{
+        left:10px;
+        transform: translateX(0px);
+        transition: all 2s ease;
+      }
+      #three{
+        left:20px;
+        transform: translateX(0px);
+        transition: all 2s ease;
+      }
+      .parent:hover #two{
+        transform: translateX(400px);
+        transition: all 2s ease;
+      }
+      .parent:hover #three{
+        transform: translateX(800px);
+        transition: all 2s ease;
+      }
+      body{
+        margin:0
+      }
+      .header{
+        background-color: grey;
+        text-align: center;
+      }
+      .main{
+        background-color: darkgrey;
+        height:1000px;
+        width:auto;
+      }
+      .parent{
+        height:300px;
+        width:300px;;
+      }
+      h1{
+        color: white;
+        margin:0;
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>The Roy Siblings</h1>
+    </div>
+    <div class="main">
+      <div class="parent">
+        <img id="one" src="img/kendall.jpg" alt="Image of Kendall Roy">
+        <img id="two" src="img/shiv.jpg" alt="Image of Shiv Roy">
+        <img id="three" src="img/roman.jpg" alt="Image of Roman Roy">
+      </div>
+    </div>
+  </body>
+</html>

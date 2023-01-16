@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <title>Data Journalism</title>
+    <meta name="description" content="Data Journalism Page of Portfolio for Nina Moothedath, currently dispalying message saying coming soon since there's no content">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+
+    <style>
+    .main{
+      text-align:center;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="menuBackground">
+    </div>  <!-- menu background -->
+    <div class="top">
+      <div id="leftOne">
+        <h1><a href="final_project_homepage.html" class="noShow">Nina Moothedath Portfolio</a></h1>
+      </div>
+      <div id="rightOne">
+        <h2>Menu</h2>
+      </div>
+      <div id="backOne">
+        <h2>Back</h2>
+      </div>
+    </div><!-- top bar -->
+
+    <div class="main">
+      <p class="text">Coming Soon!</p>
+    </div>
+
+    <div class="menu">
+      <div id="writing"><a href="writing.html" class="noShow">
+        <p class="oneline">writing</p>
+      </a></div>
+      <div id="multi"><a href="multi.html" class="noShow">
+        <p>multimedia content</p>
+      </a></div>
+      <div id="motion"><a href="motion.html" class="noShow">
+        <p class="oneline">motion graphics</p>
+      </a></div>
+      <div id="misc"><a href="misc.html" class="noShow">
+        <p class="oneline">misc. projects</p>
+      </a></div>
+      <div id="data"><a href="data.html" class="noShow">
+        <p class="oneline">data journalism</p>
+      </a></div>
+    </div><!-- menu -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      $("#rightOne").click(function(){
+        $(".main").css("opacity","0");
+        $(".main").css("display","none");
+        $(".menuBackground").css("opacity",100)
+        $(".menu").css("display","block");
+        $(".menu").css("opacity",100);
+
+        $("#rightOne").css("opacity","0");
+        $("#rightOne").css("display","none");
+        $("#backOne").css("display","block");
+        $("#backOne").css("opacity",100);
+      })
+      $("#backOne").click(function(){
+        $(".menu").css("opacity","0");
+        $(".menu").css("display","none");
+        $(".menuBackground").css("opacity",0)
+        $(".main").css("display","block");
+        $(".main").css("opacity",100);
+
+        $("#backOne").css("opacity",100);
+        $("#backOne").css("display","none");
+        $("#rightOne").css("display","block");
+        $("#rightOne").css("opacity",100);
+      })
+    </script>
+
+  </body>
+</html>

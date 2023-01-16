@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rick Roll Quiz</title>
+  <style>
+    h1{
+      text-align:center;
+    }
+    #main{
+      width: 658px;
+      margin-left: auto;
+			margin-right: auto;
+    }
+    .form-row{
+      display:flex;
+      margin-top:10px;
+			margin-bottom: 10px;
+    }
+    .form-line{
+      width:270px;
+      font-weight: bold;
+    }
+    textarea{
+      width:380px;
+    }
+    #one{
+      width:380px;
+    }
+    .space{
+      width:128.6px;
+    }
+    .spread{
+      margin:0px 5px;
+    }
+    button{
+      border-radius: 5px;
+      margin-right: 2px;
+    }
+    #submit{
+      background-color:lightblue;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <h1>Never Gonna Give You Up Lyric Quiz</h1>
+  <div id="main">
+  <form action=confirmationpage.html>
+
+    <div class="form-row">
+      <div class="form-line">
+        <label for="one">Never gonna give you:</label>
+      </div> <!--form-line-->
+      <input type="text" id="one">
+    </div> <!--form-class-->
+
+    <div class="form-row">
+      <div class="form-line">
+        <label>Never gonna let you:</label>
+      </div> <!--form-line-->
+        <label><input type="radio" name="first" class="spread">Down</label>
+        <label><input type="radio" name="first" class="spread">Left</label>
+        <label><input type="radio" name="first" class="spread">Right</label>
+    </div> <!--form-row-->
+
+    <div class="form-row">
+      <div class="form-line">
+        <label for="list">Never gonna "     " and desert you</label>
+      </div><!--form-line-->
+      <select id="list">
+        <option >Run around</option>
+        <option >Skip around</option>
+        <option >Fly around</option>
+      </select>
+    </div><!--form-row-->
+
+    <div class="form-row">
+      <div class="form-line">
+        <label>Never gonna</label>
+      </div><!--form-line-->
+      <label class="space"><input type="checkbox" >Make you cry</label>
+      <label class="space"><input type="checkbox">Say goodbye</label>
+      <label class="space"><input type="checkbox">Tell a lie (and hurt you)</label>
+    </div><!--form-row-->
+
+    <div class="form-row">
+      <div class="form-line">
+        <label for="box">Verse 1:</label>
+      </div><!--form-line-->
+      <textarea placeholder="We've known each other..." id="box"></textarea>
+    </div><!--form-row-->
+
+    <div class="form-row">
+      <div class="form-line">
+      </div><!--form-line-->
+      <label><input type="checkbox" >I accept terms & conditions</label>
+    </div><!--form-row-->
+
+    <div class="form-row">
+    <div class="form-line">
+    </div><!--form-line-->
+    <label><button type="submit" id="submit">Submit Answers</button></label>
+    <label><button type="reset" id="reset">Clear Answers</button></label>
+    </div><!--form-row-->
+  </form>
+</div>
+</body>
+</html>

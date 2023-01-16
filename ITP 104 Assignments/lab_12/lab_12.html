@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Gallery</title>
+    <style>
+      body{
+        background-color: grey;
+        margin:0px;
+      }
+      #header{
+        text-align: center;
+        line-height: 200px;
+        background-color:lightgrey;
+      }
+      h1{
+        margin:0px;
+      }
+
+      #main{
+        width:510px;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        padding-top: 20px;
+      }
+      img{
+        height:auto;
+        width:500px;
+        margin: 5px;
+      }
+
+      #main p{
+        color:#FFF;
+        font-weight:bold;
+        visibility: hidden;
+      }
+      #main img:hover + p{
+        visibility: visible;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>What's trending on Nina's Tik Tok FYP this week?</h1>
+    </div>
+
+    <div id="main">
+        <div>
+          <img id="ghost" src="img/ghost.jpeg" alt="A photo of the band Ghost playing on stage">
+          <p>The Band "Ghost"</p>
+        </div>
+
+        <div>
+          <img id="try" src="img/try.jpeg" alt="Eugene Lee Yang, Keith Habersberger and Zach Kornfeld (aka the try guys)">
+          <p>The Try Guys Scandal</p>
+        </div>
+
+        <div>
+          <img id="miami" src="img/boys.jpeg" alt="A poster for the miami boys choir">
+          <p>The Miami Boys Choir</p>
+        </div>
+
+        <div>
+          <img id="dumb" src="img/dumb.jpeg" alt="the cover of the mazie song dumb dumb">
+          <p>"Dumb Dumb" by mazie</p>
+        </div>
+
+        <div>
+          <img id="butter" src="img/butter.jpeg" alt="A butter board with herbs onions and flowers">
+          <p>The Butter Board Trend</p>
+        </div>
+
+    </div><!-- main -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+      $('#ghost').click(function(){
+        $('img').css("border","0px");
+        $('#ghost').css("border","5px solid white");
+      });
+
+      $('#try').click(function(){
+        $('img').css("border","0px");
+        $('#try').css("border","5px solid white");
+      });
+
+      $('#miami').click(function(){
+        $('img').css("border","0px");
+        $('#miami').css("border","5px solid white");
+      });
+
+      $('#dumb').click(function(){
+        $('img').css("border","0px");
+        $('#dumb').css("border","5px solid white");
+      });
+
+      $('#butter').click(function(){
+        $('img').css("border","0px");
+        $('#butter').css("border","5px solid white");
+      });
+    </script>
+
+  </body>
+</html>
