@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <title>Nina Moothedath Portfolio</title>
+    <meta name="description" content="Homepage of Portfolio for Nina Moothedath, a Journalism Major at USC, including past work and projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+
+
+    <style>
+    #nametag{
+      width:1000px;
+      margin-top:75px;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+      transition: all 1s;
+    }
+    .box{
+      width:1000px;
+      height:300px;
+    }
+    .box img{
+      width:200px;
+      margin:20px;
+    }
+    #cloud{
+      float:left;
+    }
+    #tree{
+      float:right;
+    }
+    .box p{
+      padding-top:150px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="menuBackground">
+    </div>  <!-- menu background -->
+    <div class="top">
+      <div id="leftOne">
+      </div>
+      <div id="rightOne">
+        <h2>Menu</h2>
+      </div>
+      <div id="backOne">
+        <h2>Back</h2>
+      </div>
+    </div><!-- top bar -->
+
+    <img id="nametag" src="img/text.gif" alt="gif that says Nina Moothedath. Writer,editor,creator.">
+
+    <div class="menu">
+      <div id="writing"><a href="writing.html" class="noShow">
+        <p class="oneline">writing</p>
+      </a></div>
+      <div id="multi"><a href="multi.html" class="noShow">
+        <p>multimedia content</p>
+      </a></div>
+      <div id="motion"><a href="motion.html" class="noShow">
+        <p class="oneline">motion graphics</p>
+      </a></div>
+      <div id="misc"><a href="misc.html" class="noShow">
+        <p class="oneline">misc. projects</p>
+      </a></div>
+      <div id="data"><a href="data.html" class="noShow">
+        <p class="oneline">data journalism</p>
+      </a></div>
+    </div><!-- menu -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      $("#rightOne").click(function(){
+        $("#nametag").css("opacity","0");
+        $("#nametag").css("display","none");
+        $(".box").css("opacity","0");
+        $(".box").css("display","none");
+        $(".menuBackground").css("opacity",100)
+        $(".menu").css("display","block");
+        $(".menu").css("opacity",100);
+
+        $("#rightOne").css("opacity","0");
+        $("#rightOne").css("display","none");
+        $("#backOne").css("display","block");
+        $("#backOne").css("opacity",100);
+      })
+      $("#backOne").click(function(){
+        $(".menu").css("opacity","0");
+        $(".menu").css("display","none");
+        $(".menuBackground").css("opacity",0)
+        $("#nametag").css("display","block");
+        $("#nametag").css("opacity",100);
+        $(".box").css("display","block");
+        $(".box").css("opacity",100);
+
+        $("#backOne").css("opacity",100);
+        $("#backOne").css("display","none");
+        $("#rightOne").css("display","block");
+        $("#rightOne").css("opacity",100);
+      })
+    </script>
+
+  </body>
+</html>

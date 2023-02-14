@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <title>Motion Graphics</title>
+    <meta name="description" content="Miscellaneous Projects Page of Portfolio for Nina Moothedath, currently displaying message saying coming soon since there's no content">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+
+    <style>
+    .main{
+      text-align:center;
+      position:relative
+    }
+    .main,.box{
+      width:1200px;
+    }
+    .bar{
+     display:flex;
+   }
+   #one,#two,#three{
+     width:400px;
+   }
+   #one p,#two p,#three p{
+     margin-top:15px;
+   }
+   iframe{
+     margin:20px;
+     object-fit:fill;
+   }
+   a{
+     color:white;
+     text-decoration:none;
+   }
+   #one:hover p, #two:hover p,#three:hover p{
+     color:black;
+   }
+    </style>
+  </head>
+
+  <body>
+    <div class="menuBackground">
+    </div>  <!-- menu background -->
+    <div class="top">
+      <div id="leftOne">
+        <h1><a href="index.html" class="noShow">Nina Moothedath Portfolio</a></h1>
+      </div>
+      <div id="rightOne">
+        <h2>Menu</h2>
+      </div>
+      <div id="backOne">
+        <h2>Back</h2>
+      </div>
+    </div><!-- top bar -->
+
+    <div class="main">
+      <p class="text">I've spent the last few months exploring presenting data, telling stories, and expressing myself through motion graphics. I post my work on instagram, but here's a selection of what I've made</p>
+
+        <div class="box">
+          <div class="bar">
+            <div id="one"><a href="img/tmnt.mp4" target="frame">
+              <p class="text">Music Animation</p>
+            </a></div>
+            <div id="two"><a href="img/roy.mp4" target="frame">
+              <p class="text">Explainer</p>
+            </a></div>
+            <div id="three"><a href="img/ActualMain.mp4" target="frame">
+              <p class="text">Title Graphics</p>
+            </a></div>
+          </div><!-- bar -->
+          <iframe src="img/tmnt.mp4" name="frame" width=700 height=400></iframe>
+        </div>  <!-- box -->
+    </div>
+
+    <div class="menu">
+      <div id="writing"><a href="writing.html" class="noShow">
+        <p class="oneline">writing</p>
+      </a></div>
+      <div id="multi"><a href="multi.html" class="noShow">
+        <p>multimedia content</p>
+      </a></div>
+      <div id="motion"><a href="motion.html" class="noShow">
+        <p class="oneline">motion graphics</p>
+      </a></div>
+      <div id="data"><a href="data.html" class="noShow">
+        <p class="oneline">coding</p>
+      </a></div>
+      <div id="misc"><a href="misc.html" class="noShow">
+        <p class="oneline">misc. projects</p>
+      </a></div>
+    </div><!-- menu -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      $("#rightOne").click(function(){
+        $(".main").css("opacity","0");
+        $(".main").css("display","none");
+        $(".menuBackground").css("opacity",100)
+        $(".menu").css("display","block");
+        $(".menu").css("opacity",100);
+
+        $("#rightOne").css("opacity","0");
+        $("#rightOne").css("display","none");
+        $("#backOne").css("display","block");
+        $("#backOne").css("opacity",100);
+      })
+      $("#backOne").click(function(){
+        $(".menu").css("opacity","0");
+        $(".menu").css("display","none");
+        $(".menuBackground").css("opacity",0)
+        $(".main").css("display","block");
+        $(".main").css("opacity",100);
+
+        $("#backOne").css("opacity",100);
+        $("#backOne").css("display","none");
+        $("#rightOne").css("display","block");
+        $("#rightOne").css("opacity",100);
+      })
+    </script>
+
+  </body>
+</html>

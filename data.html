@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <title>Data Journalism</title>
+    <meta name="description" content="Data Journalism Page of Portfolio for Nina Moothedath, currently dispalying message saying coming soon since there's no content">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+
+    <style>
+    .main{
+      text-align:center;
+    }
+    .exbox{
+      width:50vw;
+      margin:auto;
+      position:relative;
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+    .exbox img{
+      width:100%
+    }
+    .boxtext{
+      position:absolute;
+      text-align:center;
+      background-color: rgba(0, 0, 0, 0.7);
+      color:white;
+      visibility: hidden;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      padding-top:100px;
+      padding-left:80px;
+      padding-right:80px;
+      margin:0px;
+    }
+    .boxtext p{
+      font-family: 'Poppins', sans-serif;
+      margin-top:50px;
+    }
+    .exbox:hover .boxtext{
+      visibility:visible;
+    }
+
+    .exbox img{
+      display:block;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="menuBackground">
+    </div>  <!-- menu background -->
+    <div class="top">
+      <div id="leftOne">
+        <h1><a href="index.html" class="noShow">Nina Moothedath Portfolio</a></h1>
+      </div>
+      <div id="rightOne">
+        <h2>Menu</h2>
+      </div>
+      <div id="backOne">
+        <h2>Back</h2>
+      </div>
+    </div><!-- top bar -->
+
+    <div class="main">
+      <p class="text">In addition to this portfolio, I've coded other projects using HTML, CSS, JQuery, UI/UX principles,responsive design, other plugins and APIs! Click on the images below to out some of my work below!</p>
+
+      <div class="exbox"><a href="https://annenberginteractives.com/2022-2023/onourfeet">
+        <img src="img/OnOur.jpg">
+        <div class="boxtext">
+          <p>I created an interactive story for an art show where along with being able to read reporting on the event itself, viewers can highlight the images included within the story to learn more about the artist of a specific piece and their inspiration or creation process. </p>
+        </div><a>
+      </div>
+
+      <div class="exbox"><a href="https://ninina357.github.io/solarsystem">
+        <img src="img/solar.png">
+        <div class="boxtext">
+          <p>For the hackathon HackSC, I created an educational website to encourage young students to learn about the solar system. I designed all graphics displayed on the site using Illustrator</p>
+        </div><a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div id="writing"><a href="writing.html" class="noShow">
+        <p class="oneline">writing</p>
+      </a></div>
+      <div id="multi"><a href="multi.html" class="noShow">
+        <p>multimedia content</p>
+      </a></div>
+      <div id="motion"><a href="motion.html" class="noShow">
+        <p class="oneline">motion graphics</p>
+      </a></div>
+      <div id="data"><a href="data.html" class="noShow">
+        <p class="oneline">coding</p>
+      </a></div>
+      <div id="misc"><a href="misc.html" class="noShow">
+        <p class="oneline">misc. projects</p>
+      </a></div>
+    </div><!-- menu -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      $("#rightOne").click(function(){
+        $(".main").css("opacity","0");
+        $(".main").css("display","none");
+        $(".menuBackground").css("opacity",100)
+        $(".menu").css("display","block");
+        $(".menu").css("opacity",100);
+
+        $("#rightOne").css("opacity","0");
+        $("#rightOne").css("display","none");
+        $("#backOne").css("display","block");
+        $("#backOne").css("opacity",100);
+      })
+      $("#backOne").click(function(){
+        $(".menu").css("opacity","0");
+        $(".menu").css("display","none");
+        $(".menuBackground").css("opacity",0)
+        $(".main").css("display","block");
+        $(".main").css("opacity",100);
+
+        $("#backOne").css("opacity",100);
+        $("#backOne").css("display","none");
+        $("#rightOne").css("display","block");
+        $("#rightOne").css("opacity",100);
+      })
+    </script>
+
+  </body>
+</html>

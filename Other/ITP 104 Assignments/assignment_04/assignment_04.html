@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <style>
+      .header{
+        background-image: url("img/stars.jpeg");
+        background-size:cover;
+        margin-left: auto;
+			  margin-right: auto;
+        width:800px;
+      }
+      body{
+        margin:0px;
+      }
+      .main{
+        width:800px;
+        margin-left: auto;
+			  margin-right: auto;
+      }
+      h1{
+        line-height: 400px;
+        color:white;
+        text-align:center;
+        font-size:75px;
+        margin-top: 0px;
+        margin-bottom:0px;
+      }
+      p{
+        margin:0px;
+      }
+      th{
+        border: 1px solid black;
+        width:113.14px;
+        line-height: 30px;
+      }
+      td{
+        border: 1px solid black;
+        width:113.14px;
+        height:100px;
+        vertical-align: text-top;
+        text-align:left;
+        padding:5px;
+      }
+      table{
+        border-collapse:collapse;
+      }
+      .grey{
+        color:grey;
+      }
+      .date{
+        color:white;
+        font-weight:bold;
+        text-decoration: underline;
+      }
+      .text{
+        text-align: center;
+        background:lightgrey;
+        margin-top:25px;
+      }
+      .text2{
+        text-align: center;
+        background:lightgrey;
+        margin-top:5px;
+      }
+      #hallo{
+        background-image: url(img/moon.jpeg);
+        background-size: cover;
+      }
+      #out{
+        background-image:url(img/flag.png);
+          background-size: cover;
+      }
+      #birth{
+        background-image: url(img/cake.jpeg);
+          background-size: contain;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>October 2022</h1>
+    </div>
+
+    <div class="main">
+      <table>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+        <tr>
+          <td class="grey">25</td>
+          <td class="grey">26</td>
+          <td class="grey">27</td>
+          <td class="grey">28</td>
+          <td class="grey">29</td>
+          <td class="grey">30</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td id="out">
+            <p class="date">11</p>
+            <p class="text2">National Coming Out Day</p>
+          </td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td id="birth">
+            <p class="date">16</p>
+            <p class="text">My Birthday</p>
+          </td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td id="hallo">
+            <p class="date">31<p>
+            <p class="text">Halloween</p>
+          </td>
+          <td class="grey">1</td>
+          <td class="grey">2</td>
+          <td class="grey">3</td>
+          <td class="grey">4</td>
+          <td class="grey">5</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
