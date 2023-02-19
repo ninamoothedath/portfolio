@@ -16,25 +16,27 @@
       position:relative
     }
     .box{
+      width:100%;
       margin-top:75px;
-/*      display:flex;*/
+      display:grid;
+      grid-template-columns:1fr 7fr 1fr;
       align-items:center;
       margin-bottom:50px;
     }
     .bar{
      display:flex;
-/*     flex-direction:column;*/
+     flex-direction:column;
     }
    #one,#two,#three,#four{
       width:200px;
       background-color:#DECAB0;
       border-radius:20px;
       margin:10px;
-      margin-left:70px;
-      margin-right:70px;
+      margin-left:auto;
+      margin-right:auto;
     }
     #three,#four{
-      padding-top:10px;
+      padding-top:5px;
     }
    #one p,#two p,#three p,#four p{
      margin-top:15px;
@@ -74,8 +76,6 @@
       <p class="text">I've spent the last few months exploring presenting data, telling stories, and expressing myself through motion graphics. You can <a href="www.instagram.com/ninas.stuff_">click here</a> to see all of my graphics work on Instagram, but you can click on the buttons below to switch through a selection of what I've made:</p>
 
         <div class="box">
-          <iframe src="img/love.mp4" name="frame" width=700 height=400></iframe>
-
           <div class="bar">
             <div id="one"><a href="img/love.mp4" target="frame">
               <p class="text">Music Lyric Animation</p>
@@ -83,6 +83,14 @@
             <div id="two"><a href="img/tmnt.mp4" target="frame">
               <p class="text">Music Intro Animation</p>
             </a></div>
+          </div>
+
+          <div id="vid">
+            <iframe src="img/love.mp4" name="frame" width=700 height=400></iframe>
+          </div>
+
+          
+          <div class="bar">
             <div id="three"><a href="img/roy.mp4" target="frame">
               <p class="text">Explainer</p>
             </a></div>
