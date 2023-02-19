@@ -185,7 +185,6 @@ body{
 }
 .box{
   margin-top:100px;
-  background-color: #DECAB0;
   margin-left:auto;
   margin-right:auto;
   margin-bottom:100px;
@@ -194,10 +193,10 @@ body{
   transition: all 1s;
 }
 .box .text{
-  color:white;
+  color:black;
 }
 .main{
-  width:800px;
+  max-width:1200px;
   margin-left:auto;
   margin-right:auto;
 }

@@ -14,27 +14,30 @@
     .main{
       text-align:center;
     }
-    #twocol{
-      display:flex;
-      margin-top: 50px;
-    }
     .box{
-      width:360px;
-      margin:20px;
+      margin-top:20px;
+      margin-bottom:30px;
+    }
+    #twocol{
+      margin-left:auto;
+      margin-right:auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      margin-top: 50px;
+      width:80%;
     }
     .textbox{
       background-color:white;
+      display:flex;
+      align-items:center;
     }
     img{
-      width: 200px;
+      width: 80%;
       margin: 20px;
     }
-    .descrip1{
-      margin-top: 100px;
-    }
-    .descrip2{
-      margin-top: 75px;
-    }
+   /* #buttons{
+      width:60%;
+    }*/
     </style>
   </head>
 
@@ -63,11 +66,11 @@
       </div>
     </div>
       <div id="twocol">
+      <div class="box">
+        <img src="img/buttons.jpg" id="buttons">
+      </div>
       <div class="box textbox">
         <p class=descrip2>I've also worked behind the scenes on live broadcasts at USC, including Annenberg TV News, Annenberg Radio News and The Water Cooler. </p>
-      </div>
-      <div class="box">
-        <img src="img/buttons.jpg">
       </div>
       </div>
     </div>
