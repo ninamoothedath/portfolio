@@ -86,7 +86,7 @@
         <p class="oneline">motion graphics</p>
       </a></div>
       <div id="data"><a href="data.html" class="noShow">
-        <p class="oneline">coding</p>
+        <p class="oneline">code/data</p>
       </a></div>
       <div id="misc"><a href="misc.html" class="noShow">
         <p class="oneline">misc. projects</p>
@@ -95,30 +95,26 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
-      $("#rightOne").click(function(){
-        $(".main").css("opacity","0");
-        $(".main").css("display","none");
-        $(".menuBackground").css("opacity",100)
-        $(".menu").css("display","block");
-        $(".menu").css("opacity",100);
+      $(document).ready(function(){    
 
-        $("#rightOne").css("opacity","0");
-        $("#rightOne").css("display","none");
-        $("#backOne").css("display","block");
-        $("#backOne").css("opacity",100);
-      })
-      $("#backOne").click(function(){
-        $(".menu").css("opacity","0");
-        $(".menu").css("display","none");
-        $(".menuBackground").css("opacity",0)
-        $(".main").css("display","block");
-        $(".main").css("opacity",100);
+        $("#rightOne").click(function(){
+          $(".main").hide();
+          $(".menuBackground").show()
+          $(".menu").show()
+          $("#rightOne").hide();
+          $("#backOne").show();
+          console.log("open");
+          })
+        $("#backOne").click(function(){
+          $(".menu").hide();
+          $(".menuBackground").hide();
+          $(".main").show();
+          $("#backOne").hide();
+          $("#rightOne").show();
+        console.log("close");
 
-        $("#backOne").css("opacity",100);
-        $("#backOne").css("display","none");
-        $("#rightOne").css("display","block");
-        $("#rightOne").css("opacity",100);
       })
+    });
     </script>
 
   </body>

@@ -51,6 +51,66 @@
     .exbox img{
       display:block;
     }
+    #big-container{
+       background-color:lightslategrey;
+       width:50vw;
+       height:300px;
+       margin-right:auto;
+       margin-left:auto;
+       margin-top:50px;
+       margin-bottom:100px;
+       position:relative;
+       padding-top:75px;
+    }
+
+    .clickable{
+       background-color:cornflowerblue;
+       width:15%;
+       height:45px;
+       border-radius:10px;
+       color:white;
+       text-align:center;
+       font-size:1em;
+       padding:10px;
+       margin-left:auto;
+       margin-right:auto;
+    }
+
+    .clickable p{
+       margin:0;
+    }
+
+    .clickable:hover{
+       background-color:lightskyblue;
+       cursor:pointer;
+    }
+
+    #wave{
+       background-color:lightskyblue;
+       position:absolute;
+       bottom:0px;
+       left:0px;
+       width:100%;
+       height:0px;
+       transition:height 1s;
+    }
+
+    #slide1, #slide2, #slide3{
+       display:none;
+    }
+
+    .gtext{
+       width:50%;
+       margin-left:auto;
+       margin-right:auto;
+       margin-top:10px;
+       font-size:1.5em;
+    }
+
+    a{
+       color:inherit;
+       text-decoration:none;
+    }
     </style>
   </head>
 
@@ -85,6 +145,41 @@
           <p>For the hackathon HackSC, I created an educational website to encourage young students to learn about the solar system. I designed all graphics displayed on the site using Illustrator</p>
         </div><a>
       </div>
+
+      <p class="text">Below is an interactive embed made for a story about flooding in LA.</p>
+
+      <div id="big-container">
+
+        <div id="start">
+          <div class="gtext"><p>Rain can be an inconvience for us all, but a new study found that the threat the downfall poses to Los Angeles isn't equal for everyone</p></div>
+          <div class="clickable"><p>click here to begin</p></div>
+        </div>
+
+        <div id="slide1">
+          <div class="gtext"><p>According to the New York Times, the researchers built a computer model with a digital topographical map of L.A. to study how extreme rain would flow through and affect the city.</p></div>
+          <div class="clickable"><p>continue</p></div>
+        </div>
+
+        <div id="slide2">
+          <div class="gtext"><p>They found that when it comes to deep flooding, or where there's more than 100 cm (about 39 inches) of water, Black residents are at 79% more likely to be exposed to the flooding than white residents, with Hispanic residents 17% more likely and Asian residents 11% more likely.</p></div>
+          <div class="clickable"><p>continue</p></div>
+        </div>
+
+        <div id="slide3">
+          <div class="gtext"><p>Learn more about the study and what it means for communities in Los Angeles:</p></div>
+          <div class="clickable"><p><a href="https://www.nytimes.com/2022/10/31/climate/los-angeles-flood-risk.html">Click here</a></p></div>
+        </div>
+
+        <div id="wave">
+        </div>
+      </div>
+
+      <div class="exbox"><a href="https://devpost.com/software/gymgals">
+        <img src="img/gym.png">
+        <div class="boxtext">
+          <p>GymGals was a basic website I collaborated on during a hackathon, with the mission of helping woen in LA Find others they can go to the gym with to make the often male-dominated space less intimidating. The mailing list and schedule forms are funcitonal, linked to add the user's information to a Google Sheets database.</p>
+        </div><a>
+      </div>
     </div>
 
     <div class="menu">
@@ -98,7 +193,7 @@
         <p class="oneline">motion graphics</p>
       </a></div>
       <div id="data"><a href="data.html" class="noShow">
-        <p class="oneline">coding</p>
+        <p class="oneline">code/data</p>
       </a></div>
       <div id="misc"><a href="misc.html" class="noShow">
         <p class="oneline">misc. projects</p>
@@ -107,30 +202,59 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
-      $("#rightOne").click(function(){
-        $(".main").css("opacity","0");
-        $(".main").css("display","none");
-        $(".menuBackground").css("opacity",100)
-        $(".menu").css("display","block");
-        $(".menu").css("opacity",100);
+      $(document).ready(function(){    
 
-        $("#rightOne").css("opacity","0");
-        $("#rightOne").css("display","none");
-        $("#backOne").css("display","block");
-        $("#backOne").css("opacity",100);
-      })
+        $("#rightOne").click(function(){
+        $(".main").hide();
+        $(".menuBackground").show()
+        $(".menu").show()
+
+        $("#rightOne").hide();
+        $("#backOne").show();
+          })
       $("#backOne").click(function(){
-        $(".menu").css("opacity","0");
-        $(".menu").css("display","none");
-        $(".menuBackground").css("opacity",0)
-        $(".main").css("display","block");
-        $(".main").css("opacity",100);
-
-        $("#backOne").css("opacity",100);
-        $("#backOne").css("display","none");
-        $("#rightOne").css("display","block");
-        $("#rightOne").css("opacity",100);
+        $(".menu").hide();
+        $(".menuBackground").hide();
+        $(".main").show();
+        $("#backOne").hide();
+        $("#rightOne").show();
       })
+
+        $("#start").click(function(){    
+            $("#wave").css("height","375px");
+            setTimeout(function(){
+               $("#start").toggle();
+               $("#slide1").toggle();
+               $(".clickable").css("height","30px");
+               $(".gtext").css("width","55%");
+            },1000); 
+         });
+
+        $("#slide1").click(function(){    
+            $("#wave").css("height","375px");
+            setTimeout(function(){
+               $("#slide1").toggle();
+               $("#slide2").toggle();
+               $(".gtext").css("width","80%");
+            },1000); 
+         });
+
+        $("#slide2").click(function(){    
+            $("#wave").css("height","375px");
+            setTimeout(function(){
+               $("#slide2").toggle();
+               $("#slide3").toggle();
+               $(".gtext").css("width","50%");
+            },1000); 
+         });
+
+      });  
+
+      document.getElementById("wave").addEventListener("transitionend", () => {
+         $("#wave").css("height","20");
+         console.log("didit!");
+      });
+
     </script>
 
   </body>

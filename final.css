@@ -42,7 +42,6 @@
 }
 #backOne{
   display:none;
-  opacity: 0;
   width:200px;
   text-align: center;
   padding-top:10px;
@@ -75,7 +74,7 @@ h2{
   position:relative;
   margin-left:auto;
   margin-right:auto;
-  opacity: 0;
+  opacity: 100;
   display:none;
   transition:all 500ms;
 }
@@ -85,7 +84,8 @@ h2{
   left:0;
   height:100%;
   width:100%;
-  opacity:0;
+  opacity:100;
+  display:none;
   /* background-color: #31697d; */
   transition:all 500ms;
 }
