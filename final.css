@@ -379,6 +379,9 @@ body{
    .pickmotion:hover p{
      color:white;
    }
+   .pickmotion:hover{
+    cursor:pointer;
+   }
 
 
    .toptextblock{

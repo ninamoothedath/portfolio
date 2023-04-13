@@ -60,5 +60,11 @@ $(document).ready(function(){
 		$(".data").fadeToggle()
 	});
 
+	$(".pickmotion").click(function(){
+		var vid = $(this).attr("src")
+		console.log(vid)
+		$("#frame").attr("src",vid)
+	})
+
 	
 });
