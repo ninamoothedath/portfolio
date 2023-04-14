@@ -474,29 +474,32 @@ body{
       text-decoration:none;
     }
 
-    .live .main{
+    .live p, .data p{
+      font-family: 'Poppins', sans-serif;
+    }
+    .live .main,.data .main{
       text-align:center;
     }
-    .live .box{
+    .live .box, .data .box{
       margin-top:20px;
       margin-bottom:30px;
       width:100%;
       height:100%;
     }
-    .live #twocol{
+    .live .twocol,.data .twocol{
       margin-left:auto;
       margin-right:auto;
       display:grid;
       grid-template-columns:1fr 1fr;
-      margin-top: 50px;
       width:80vw;
     }
-    .live .textbox{
+    .live .textbox, .data .textbox{
       background-color:white;
       display:flex;
       align-items:center;
     }
-    .live img{
+    .live img, .data img{
       width: 80%;
       margin: 20px;
+      margin-top: 50px;
     }
