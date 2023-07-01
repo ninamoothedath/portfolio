@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Path</title>
+
+	<!-- viewport for responsive -->	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- character set -->
+    <meta charset="UTF-8">
+  
+
+	<!-- CSS stylesheets -->	
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Babylonica&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+  	<div class="page1">
+
+  		<div class="titlebox">
+  			<h2>Welcome to the Path</h2>
+  			<form>
+	  			<label for="name">Enter your name to begin</label>
+	  			<p></p>
+	  			<input type="text" class="name" id="name" placeholder="your name"></input>
+  			</form>
+  			<button class="submit">Submit</button>
+  			<p class="credits">Music credits</p>
+  			<audio loop src="media/underglow.mp3">
+  		</div> <!-- titlebox -->
+
+  	</div><!-- page1 -->
+
+  	<div class="page2">
+  		<div class="main">
+  			<div class="imgbox">
+  				<img src="img/door.png">
+  			</div> <!-- imagebox -->
+
+  			<div class="textbox">
+  				<p class="line1"></p>
+  				<p class="last-text">Before leaving, there's a choice to make: what tool should you take on the journey?</p>
+  			</div>
+
+  			<div class="optionbox">
+  				<div class="option items" item="shears">
+  					<p>shears</p>
+  				</div>
+  				<div class="option items" item="rope">
+  					<p>rope</p>
+  				</div>
+  			</div>
+  		</div> <!-- main -->
+  	</div> <!-- page2 -->
+
+  	<div class="page3">
+  		<div class="main">
+  			<div class="imgbox">
+  				<img src="img/trees.png">
+  			</div> <!-- imagebox -->
+
+  			<div class="textbox">
+  				<p class="line2"></p>
+  				<p class="last-text">The journey takes you to a fork in the road, with two paths you don't know well. You stop to read the signs and decide which way to follow.</p>
+  			</div>
+
+  			<div class="optionbox">
+  				<div class="option paths" path="vines">
+  					<p>Vile Vines</p>
+  				</div>
+  				<div class="option paths" path="ravine">
+  					<p>Red Ravine</p>
+  				</div>
+  			</div>
+  		</div> <!-- main -->
+  	</div> <!-- page3 -->
+
+  	<div class="goodvine">
+  		<div class="main">
+  			<div class="imgbox">
+  				<img src="img/goodvines.png">
+  			</div> <!-- imagebox -->
+  			<div class="textbox">
+  				<p>As you walk down the path, vines reach up and grab at your feet, trying to pull you down.</p>
+  				<p>Luckily, you have your shears. </p>
+  				<p>You're just able to make it out, snipping the last pieces to bits. Taking a deep breath, you rest for a second to look up at the night sky and be grateful for your escape.</p>
+  			</div>
+  			<div class="endbutton">
+  				<button >Play again?</button>
+  			</div>
+  		</div> <!-- main -->
+  	</div> <!-- goodvine -->
+
+  	<div class="badvine">
+  		<div class="main">
+  			<div class="imgbox">
+  				<img src="img/badvines.png">
+  			</div> <!-- imagebox -->
+  			<div class="textbox">
+  				<p>As you walk down the path, vines reach up and grab at your feet, trying to pull you down.</p>
+  				<p>Your rope only tangles your further when you try to use it.</p>
+  				<p>As the vines close in, the moon is the last part of the night sky in your vision to slowly melt alway.</p>
+  			</div>
+  			<div class="endbutton">
+  				<button>Try again?</button>
+  			</div>
+  		</div> <!-- main -->
+  	</div> <!-- badvine -->
+
+  	<div class="goodravine">
+  		<div class="main">
+  			<div class="imgbox">
+  				<img src="img/goodravine.png">
+  			</div> <!-- imagebox -->
+  			<div class="textbox">
+  				<p>As you walk down the path, there's a drop in the road you didn't see, and before you know it you're falling into a ravine.</p>
+  				<p>Luckily, you have your rope.</p>
+  				<p>You're just able to make it out, pulling yourself up and over the ledge. Taking a deep breath, you rest for a second to look up at the night sky and be grateful for your escape</p>
+  			</div>
+  			<div class="endbutton">
+  				<button >Play again?</button>
+  			</div>
+  		</div> <!-- main -->
+  	</div> <!-- goodravine -->
+
+  	<div class="badravine">
+  		<div class="main">
+  			<div class="imgbox">
+  				<img src="img/badravine.png">
+  			</div> <!-- imagebox -->
+  			<div class="textbox">
+  				<p>As you walk down the path, there's a drop in the road you didn't see, and before you know it you're falling into a ravine.</p>
+  				<p>Your shears aren't sharp enough to cut footholds into the rock.</p>
+  				<p>As you sit at the bottom of the cold ravine, the moon is the only thing you can see through the gap of the world above.</p>
+  			</div>
+  			<div class="endbutton">
+  				<button>Try again?</button>
+  			</div>
+  		</div> <!-- main -->
+  	</div> <!-- badravine -->
+
+<!-- JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="script.js"></script>
+  </body>
+</html>
+
+
+<!-- photos courtesy of Sarah Soutoul (copyright) -->
+<!-- soar.mp4 courtesy of Keith Plocek (copyright) -->

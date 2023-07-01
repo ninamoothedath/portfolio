@@ -1,0 +1,225 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+*/
+
+/*google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+
+/*main css*/
+
+
+* {
+   box-sizing: border-box;
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+body {
+   background-color: #07090d;
+/*   font-family: 'Lato', sans-serif;*/
+   font-family: 'Architects Daughter', cursive;
+   color:white;
+   /*font-family: 'Montserrat', sans-serif;*/
+}
+
+input{
+   text-align:center;
+}
+
+audio{
+   display:none;
+}
+.titlebox{
+   max-width:700px;
+   margin:auto;
+   text-align:center;
+   margin-top:30vh;
+}
+
+.titlebox h2{
+   font-size:75px;
+   line-height:50px;
+   font-family: 'Babylonica', cursive;
+}
+
+.titlebox label{
+   font-size:25px;
+   line-height:0px;
+}
+
+.submit{
+   margin-top:10px;
+}
+
+.credits{
+   color:grey;
+   font-size:20px;
+   margin-top:70px;
+}
+
+.credits a{
+   color:slategrey;
+}
+
+.page2,.page3,.goodravine,.badravine,.goodvine,.badvine{
+   display:none;
+}
+
+.main{
+   width:100vw;
+   height:100vh;
+}
+
+.imgbox{
+   width:65%;
+   margin:auto;
+   margin-top:5vh;
+}
+
+.textbox{
+   width:60%;
+   margin:auto;
+   margin-top:25px;
+   text-align:center;
+}
+
+.last-text{
+   margin-bottom:0px;
+}
+
+.optionbox{
+   width:60%;
+   margin:auto;
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.option{
+   text-align:center;
+   font-family: 'Babylonica', cursive;
+   font-size:75px;
+   line-height:10px;
+/*   font-size:30px;*/
+   color:#a83637;
+}
+
+.endbutton{
+   width:100px;
+   margin:auto;
+}
+
+/*media query for responsive design */
+
+@media only screen and (max-width: 992px) {
+
+   .titlebox{
+      max-width:500px;
+      margin-top:30vh;
+   }
+
+   .titlebox h2{
+      font-size:75px;
+   }
+
+   .titlebox label{
+      font-size:30px;
+   }
+
+   .submit{
+      margin-top:15px;
+   }
+
+   .credits{
+      font-size:20px;
+      margin-top:50px;
+   }
+
+   .optionbox{
+      width:80%;
+   }
+
+   .textbox{
+      font-size:25px;
+   }
+
+   .endbutton{
+      margin-top:50px;
+      margin-bottom:50px;
+   }
+
+   .endbutton button{
+      margin-bottom:50px;
+   }
+
+   button{
+      font-size:20px;
+   }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+   .titlebox{
+      max-width:200px;
+      margin-top:10vh;
+   }
+
+   .titlebox h2{
+      font-size:50px;
+      line-height:50px;
+      text-align:center;
+   }
+
+   .titlebox label{
+      font-size:30px;
+      line-height:30px;
+   }
+
+   .name{
+      font-size:20px;
+      width:100%;
+   }
+
+   .credits{
+      font-size:25px;
+      margin-top:50px;
+   }
+
+   .optionbox{
+      width:80%;
+      grid-template-columns: 1fr;
+   }
+
+   .option{
+      font-size:50px;
+   }
+
+   .last-text{
+      margin-bottom:25px;
+   }
+
+   .endbutton{
+      margin-top:50px;
+   }
+   .endbutton button{
+      margin-bottom:50px;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
