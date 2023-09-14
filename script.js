@@ -1,70 +1,25 @@
+
+
 $(document).ready(function(){
-	$("#writingt").click(function(){
-		$(".nav").fadeToggle()
-		$(".writing").fadeToggle()
-	});
 
-	$(".writing .return").click(function(){
-		$(".nav").fadeToggle()
-		$(".writing").fadeToggle()
-	});
+  $(".fthumb").click(function(){
+    $(".nav").fadeToggle()
+    var where = this.getAttribute("send")
+    $(where).fadeToggle()
+  });
 
-	$("#codet").click(function(){
-		$(".nav").fadeToggle()
-		$(".code").fadeToggle()
-	});
+  $(".return").click(function(){
+    $(".nav").fadeToggle()
+    var from = this.getAttribute("from")
+    $(from).fadeToggle()
+  });
 
-	$(".code .return").click(function(){
-		$(".nav").fadeToggle()
-		$(".code").fadeToggle()
-	});
-
-	$("#motiont").click(function(){
-		$(".nav").fadeToggle()
-		$(".motion").fadeToggle()
-	});
-
-	$(".motion .return").click(function(){
-		$(".nav").fadeToggle()
-		$(".motion").fadeToggle()
-	});
-
-	$("#multit").click(function(){
-		$(".nav").fadeToggle()
-		$(".multi").fadeToggle()
-	});
-
-	$(".multi .return").click(function(){
-		$(".nav").fadeToggle()
-		$(".multi").fadeToggle()
-	});
-
-	$("#livet").click(function(){
-		$(".nav").fadeToggle()
-		$(".live").fadeToggle()
-		console.log("liveclick")
-	});
-
-	$(".live .return").click(function(){
-		$(".nav").fadeToggle()
-		$(".live").fadeToggle()
-	});
-
-	$("#datat").click(function(){
-		$(".nav").fadeToggle()
-		$(".data").fadeToggle()
-	});
-
-	$(".data .return").click(function(){
-		$(".nav").fadeToggle()
-		$(".data").fadeToggle()
-	});
 
 	$(".pickmotion").click(function(){
 		var vid = $(this).attr("src")
 		console.log(vid)
 		$("#frame").attr("src",vid)
-	})
+	});
 
 
 	// Data Graphic
@@ -127,5 +82,4 @@ $(document).ready(function(){
         console.log("off!");
         }
       );
-	
 });
