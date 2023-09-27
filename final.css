@@ -43,8 +43,8 @@
         display:flex;
       }
       #bigmotionbox{
-        height: 500px;
-        margin-bottom:50px;
+        height: 450px;
+/*        margin-bottom:50px;*/
       }
       button{
         width:100px;
@@ -405,6 +405,10 @@ body{
    }
    .pickmotion:hover{
     cursor:pointer;
+   }
+   .roletext{
+    margin-top:10px;
+    margin-bottom:100px;
    }
 
 

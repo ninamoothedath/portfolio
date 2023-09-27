@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
   $(".fthumb").click(function(){
@@ -17,8 +15,11 @@ $(document).ready(function(){
 
 	$(".pickmotion").click(function(){
 		var vid = $(this).attr("src")
-		console.log(vid)
+    var text = $(this).attr("text")
+    console.log(vid)
+		console.log(text)
 		$("#frame").attr("src",vid)
+    $(".roletext").html(text)
 	});
 
 
